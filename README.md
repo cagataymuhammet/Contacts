@@ -27,7 +27,7 @@ The app uses MVVM [Model-View-ViewModel] architecture to have a unidirectional f
 Model-View-ViewModel (ie MVVM) is a template of a client application architecture, proposed by John Gossman as an alternative to MVC and MVP patterns when using Data Binding technology. Its concept is to separate data presentation logic from business logic by moving it into particular class for a clear distinction.  
 
 ## Simple Architecture
-![Architecture](https://github.com/cagataymuhammetContacts/blob/main/arc.PNG)
+![Architecture](https://github.com/cagataymuhammetContacts/blob/main/images/arc.PNG)
 
 ## Libraries and tools 🛠
 <li>JetPack Navigation</li>
