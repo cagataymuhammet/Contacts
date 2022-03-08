@@ -1,0 +1,119 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-kapt'
+    id "androidx.navigation.safeargs.kotlin"
+}
+
+apply from: 'obfuscationUtils.gradle'
+
+android {
+    compileSdk 31
+    compileSdkVersion 31
+    buildToolsVersion "31.0.0"
+
+    defaultConfig {
+        applicationId "com.cagataymuhammet.contactlist"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        //For obfuscate base url of Api
+        buildConfigField 'String', 'API_BASE_URL', obfuscateJavaToByteString("https://621f40f4311a705914063fc9.mockapi.io/interview/v1/")
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += [
+                        "room.schemaLocation"  : "$projectDir/schemas".toString(),
+                        "room.incremental"     : "true",
+                        "room.expandProjection": "true"]
+            }
+        }
+
+    }
+
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+
+}
+
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    api "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    api "androidx.appcompat:appcompat:$appcompatVersion"
+    api "com.google.android.material:material:$materialVersion"
+    api "androidx.constraintlayout:constraintlayout:$constraintlayoutVersion"
+
+    // COROUTINES
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+
+    // ARCHITECTURE COMPONENTS
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
+    api "androidx.lifecycle:lifecycle-livedata-ktx:$livedataVersion"
+    api "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion"
+    api "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    api "androidx.fragment:fragment-ktx:1.4.1"
+
+    // NAVIGATION
+    api "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+    api "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+
+    //PAGING
+    api "androidx.paging:paging-runtime:$pagingVersion"
+
+    // RETROFIT 2
+    api "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    api "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    api "com.squareup.okhttp3:logging-interceptor:$loggingVersion"
+
+    // DAGGER HILT
+    api "com.google.dagger:hilt-android:$hiltVersion"
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+    kapt "com.google.dagger:hilt-compiler:$hiltVersion"
+
+
+    //GLIDE
+    api "com.github.bumptech.glide:glide:$glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
+
+    // TEST
+    testImplementation "junit:junit:$junitVersion"
+    androidTestImplementation "androidx.test.ext:j$junitTestVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
+
+    testImplementation "io.mockk:mockk:$mockkVersion"
+    testImplementation "androidx.arch.core:core-testing:$coreTestingVersion"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesTestVersion"
+    testImplementation "com.google.truth:truth:$truthVersion"
+
+    implementation "androidx.room:room-runtime:2.4.2"
+    kapt "androidx.room:room-compiler:2.4.2"
+}

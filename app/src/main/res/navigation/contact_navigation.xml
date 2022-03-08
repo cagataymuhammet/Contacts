@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contactNavigation"
+    app:startDestination="@id/contactListFragment">
+
+    <action
+        android:id="@+id/action_to_contactListFragment"
+        app:destination="@id/contactListFragment" />
+
+    <action
+        android:id="@+id/action_to_contactDetailFragment"
+        app:destination="@id/contactDetailFragment" />
+
+    <fragment
+        android:id="@+id/contactListFragment"
+        android:name="com.cagataymuhammet.contactlist.ui.contact.list.ContactListFragment"
+        android:label="ContactListFragment"
+        tools:layout="@layout/fragment_contact_list">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/contactDetailFragment"
+        android:name="com.cagataymuhammet.contactlist.ui.contact.detail.ContactDetailFragment"
+        android:label="ContactDetailFragment"
+        tools:layout="@layout/fragment_contact_detail">
+
+        <argument
+            android:name="contactResultArgument"
+            android:defaultValue="@null"
+            app:argType="com.cagataymuhammet.contactlist.data.model.Contact"
+            app:nullable="true" />
+
+    </fragment>
+
+
+</navigation>

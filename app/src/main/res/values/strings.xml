@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Contact List</string>
+    <string name="title_menu_search">Search Contact</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="contact_card">Contact Card</string>
+    <string name="retry">Retry</string>
+
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="mail">E-Mail</string>
+    <string name="company">Company</string>
+    <string name="department">Department</string>
+    <string name="number">Number</string>
+    <string name="input_validation">Please fill area</string>
+    <string name="no_connection_message">No Connection</string>
+    <string name="successfull">Successful</string>
+</resources>
