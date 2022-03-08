@@ -2,32 +2,32 @@
 
 
 <p align="center">
-<img src="https://github.com/cagataymuhammet/Contacts/blob/master/images/android_arc.png"/>
+<img src="https://github.com/cagataymuhammet/Contacts/blob/main/images/android_arc.png"/>
 </p>
 
 
 # App
- <img height= "130"  src="https://github.com/cagataymuhammet/Contacts/blob/master/images/app_icon.png" />
+ <img height= "130"  src="https://github.com/cagataymuhammet/Contacts/blob/main/images/app_icon.png" />
 
 
 <h2 id="Outputs">Outputs</h2>
 <p>
-  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/master/images/1.png" alt="SS1" />
-  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/master/images/2.png" alt="SS2" />
-  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/master/images/3.png" alt="SS3" />
-  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/master/images/4.png" alt="SS4" />
+  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/main/images/1.png" alt="SS1" />
+  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/main/images/2.png" alt="SS2" />
+  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/main/images/3.png" alt="SS3" />
+  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/main/images/4.png" alt="SS4" />
 </p>
 
 ## Architecture
 The app uses MVVM [Model-View-ViewModel] architecture to have a unidirectional flow of data, separation of concern, testability, and a lot more.
 
-![Architecture](https://github.com/cagataymuhammet/Contacts/blob/master/mvvm.png)
+![Architecture](https://github.com/cagataymuhammet/Contacts/blob/main/mvvm.png)
 
 # What is MVVM?
 Model-View-ViewModel (ie MVVM) is a template of a client application architecture, proposed by John Gossman as an alternative to MVC and MVP patterns when using Data Binding technology. Its concept is to separate data presentation logic from business logic by moving it into particular class for a clear distinction.  
 
 ## Simple Architecture
-![Architecture](https://github.com/cagataymuhammetContacts/blob/master/arc.png)
+![Architecture](https://github.com/cagataymuhammetContacts/blob/main/arc.png)
 
 ## Libraries and tools 🛠
 <li>JetPack Navigation</li>
