@@ -7,15 +7,15 @@
 
 
 # App
- <img height= "130"  src="https://github.com/cagataymuhammet/Contacts/blob/main/images/app_icon.png" />
+ <img height= "300"  src="https://github.com/cagataymuhammet/Contacts/blob/main/images/app_icon.png" />
 
 
 <h2 id="Outputs">Outputs</h2>
 <p>
-  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/main/images/1.png" alt="SS1" />
-  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/main/images/2.png" alt="SS2" />
-  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/main/images/3.png" alt="SS3" />
-  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/main/images/4.png" alt="SS4" />
+  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/main/images/1.jpeg" alt="SS1" />
+  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/main/images/2.jpeg" alt="SS2" />
+  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/main/images/3.jpeg" alt="SS3" />
+  <img height= "700"  src="https://github.com/cagataymuhammet/Contacts/blob/main/images/4.jpeg" alt="SS4" />
 </p>
 
 ## Architecture
